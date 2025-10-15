@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ topic }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; color: #222; }
+        h1 { color: #004080; }
+        h2 { border-bottom: 2px solid #004080; padding-bottom: 5px; }
+        .module { margin-bottom: 40px; }
+    </style>
+</head>
+<body>
+    <h1>{{ topic }}</h1>
+    {% for module in modules %}
+    <div class="module">
+        <h2>{{ module.titulo }}</h2>
+        <div>{{ module.contenido | safe }}</div>
+    </div>
+    {% endfor %}
+</body>
+</html>

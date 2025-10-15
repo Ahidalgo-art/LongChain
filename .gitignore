@@ -1,0 +1,22 @@
+# Entorno virtual
+venv/
+.env
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+# Archivos de configuración de IDE
+.vscode/
+.idea/
+# Resultados generados
+resultados/
+github/
+# Archivos de logs
+*.log
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+# Archivos PDF y DOCX de entrada (opcional)
+data/*.pdf
+data/*.docx
