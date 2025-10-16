@@ -6,7 +6,7 @@ from langchain_openai import ChatOpenAI
 load_dotenv()  # Carga variables del archivo .env
 
 # Se usará la clave de API configurada en el entorno
-llm = ChatOpenAI(model="gpt-4o", openai_api_key=os.getenv("OPENAI_API_KEY"))
+llm = ChatOpenAI(model="gpt-5", openai_api_key=os.getenv("OPENAI_API_KEY"))
 
 def leer_pdf(ruta):
     from PyPDF2 import PdfReader
@@ -49,7 +49,7 @@ if __name__ == "__main__":
     print("Unidad de aprendizaje 1 generada:\n")
     print(contenido_unidad1)
 
-    # Guardar resultados en HTML y PDF
+    # Guardar resultados en HTML
     carpeta_resultados = "resultados"
     os.makedirs(carpeta_resultados, exist_ok=True)
     ruta_html = os.path.join(carpeta_resultados, "unidad1.html")
